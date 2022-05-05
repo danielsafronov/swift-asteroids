@@ -64,7 +64,6 @@ final class AsteroidContentView: UIView {
     private func configureTitleLabel() {
         addSubview(titleLabel)
         
-        titleLabel.text = "Hello World"
         titleLabel.font = .systemFont(ofSize: 24.0, weight: .bold)
         titleLabel.numberOfLines = 1
         
@@ -78,7 +77,6 @@ final class AsteroidContentView: UIView {
     private func configureDescriptionLabel() {
         addSubview(descriptionLabel)
         
-        descriptionLabel.text = "Hello World"
         descriptionLabel.font = .systemFont(ofSize: 16.0, weight: .regular)
         descriptionLabel.numberOfLines = 1
         
