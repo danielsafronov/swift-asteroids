@@ -104,6 +104,7 @@
 			children = (
 				B26269B7282169CB006802AE /* Asteroids */,
 				B26269B6282169CB006802AE /* Products */,
+				B2626A2F2823FE0C006802AE /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,7 +128,6 @@
 				B26269C1282169CC006802AE /* Assets.xcassets */,
 				B26269C6282169CC006802AE /* Info.plist */,
 				B2626A262823F8A8006802AE /* Configuration.xcconfig */,
-				B2626A2F2823FE0C006802AE /* README.md */,
 				B26269C3282169CC006802AE /* LaunchScreen.storyboard */,
 			);
 			path = Asteroids;
