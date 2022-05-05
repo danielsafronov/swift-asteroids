@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift-http-client",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielsafronov/swift-http-client.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "86a1387553392800eead01b7c7e1ae1e17372d29"
+      }
+    },
+    {
+      "identity" : "swift-service-locator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielsafronov/swift-service-locator.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "362479bea16b8ebaaa0f80f2c3b07dd6b8d0bfef"
+      }
+    }
+  ],
+  "version" : 2
+}
