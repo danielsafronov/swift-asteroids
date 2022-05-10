@@ -123,12 +123,7 @@
 				B26269E328217A8C006802AE /* Data */,
 				B26269E228217A85006802AE /* Domain */,
 				B26269CC28216A3C006802AE /* Presentation */,
-				B26269B8282169CB006802AE /* AppDelegate.swift */,
-				B26269BA282169CB006802AE /* SceneDelegate.swift */,
-				B26269C1282169CC006802AE /* Assets.xcassets */,
-				B26269C6282169CC006802AE /* Info.plist */,
-				B2626A262823F8A8006802AE /* Configuration.xcconfig */,
-				B26269C3282169CC006802AE /* LaunchScreen.storyboard */,
+				B2FF1048282A728F008AD578 /* Resources */,
 			);
 			path = Asteroids;
 			sourceTree = "<group>";
@@ -193,6 +188,8 @@
 		B26269E228217A85006802AE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				B2FF1049282A72C2008AD578 /* Repositories */,
+				B26269E728227D47006802AE /* Models */,
 				B26269EA28227FC6006802AE /* UseCases */,
 			);
 			path = Domain;
@@ -203,7 +200,6 @@
 			children = (
 				B26269F02822828F006802AE /* DataSources */,
 				B26269EF2822827F006802AE /* Repositories */,
-				B26269E728227D47006802AE /* Models */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -213,6 +209,8 @@
 			children = (
 				B2626A292823F9B3006802AE /* Configuration */,
 				B2626A282823F9A8006802AE /* Providers */,
+				B26269B8282169CB006802AE /* AppDelegate.swift */,
+				B26269BA282169CB006802AE /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -239,7 +237,6 @@
 		B26269EF2822827F006802AE /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				B2626A0628228F27006802AE /* AsteroidRepositoryProtocol.swift */,
 				B2626A0828228F4E006802AE /* AsteroidRepository.swift */,
 			);
 			path = Repositories;
@@ -348,6 +345,25 @@
 				B2626A2D2823FA60006802AE /* Configuration+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B2FF1048282A728F008AD578 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B26269C1282169CC006802AE /* Assets.xcassets */,
+				B2626A262823F8A8006802AE /* Configuration.xcconfig */,
+				B26269C6282169CC006802AE /* Info.plist */,
+				B26269C3282169CC006802AE /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2FF1049282A72C2008AD578 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B2626A0628228F27006802AE /* AsteroidRepositoryProtocol.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,7 +618,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 46UZR42QB5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Asteroids/Info.plist;
+				INFOPLIST_FILE = Asteroids/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -630,7 +646,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 46UZR42QB5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Asteroids/Info.plist;
+				INFOPLIST_FILE = Asteroids/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
