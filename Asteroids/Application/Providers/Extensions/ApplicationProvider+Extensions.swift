@@ -10,7 +10,7 @@ import ServiceLocator
 
 extension ApplicationProvider {
     init() {
-        self.init(serviceLocator: ServiceLocator())
+        self.init(serviceLocator: DefaultServiceLocator())
     }
 }
 

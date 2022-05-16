@@ -11,13 +11,13 @@ import HttpClient
 
 /// ApplicationProvider class.
 struct ApplicationProvider {
-    /// An instance of `ServiceLocatorProtocol`.
-    let serviceLocator: ServiceLocatorProtocol
+    /// An instance of `ServiceLocator`.
+    let serviceLocator: ServiceLocator
     
     /// Creates a new instance of `ApplicationProvider`.
-    /// - parameter serviceLocator: An instance of `ServiceLocatorProtocol`.
+    /// - parameter serviceLocator: An instance of `ServiceLocator`.
     /// - returns: An instance of `ApplicationProvider`.
-    init(serviceLocator: ServiceLocatorProtocol) {
+    init(serviceLocator: ServiceLocator) {
         self.serviceLocator = serviceLocator
     }
     
