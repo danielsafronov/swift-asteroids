@@ -41,7 +41,7 @@ struct ApplicationProvider {
     /// Executes the data sources bootstrap process.
     private func bootstrapDataSources() {
         serviceLocator.register(
-            abstraction: AsteroidDataSourceProtocol.self,
+            abstraction: AsteroidDataSource.self,
             concrete: AsteroidAPIDataSource(
                 httpClient: serviceLocator.requireResolve()
             )
@@ -51,8 +51,8 @@ struct ApplicationProvider {
     /// Executes the repositories bootstrap process.
     private func bootstrapRepositories() {
         serviceLocator.register(
-            abstraction: AsteroidRepositoryProtocol.self,
-            concrete: AsteroidRepository(
+            abstraction: AsteroidRepository.self,
+            concrete: DefaultAsteroidRepository(
                 dataSource: serviceLocator.requireResolve()
             )
         )
@@ -60,18 +60,18 @@ struct ApplicationProvider {
     
     /// Executes the use cases bootstrap process.
     private func bootstrapUseCases() {
-        let repository: AsteroidRepositoryProtocol = serviceLocator.requireResolve()
+        let repository: AsteroidRepository = serviceLocator.requireResolve()
         
         serviceLocator.register(
-            abstraction: GetAsteroidsUseCaseProtocol.self,
-            concrete: GetAsteroidsUseCase(
+            abstraction: GetAsteroidsUseCase.self,
+            concrete: DefaultGetAsteroidsUseCase(
                 repository: repository
             )
         )
         
         serviceLocator.register(
-            abstraction: GetAsteroidUseCaseProtocol.self,
-            concrete: GetAsteroidUseCase(
+            abstraction: GetAsteroidUseCase.self,
+            concrete: DefaultGetAsteroidUseCase(
                 repository: repository
             )
         )

@@ -22,8 +22,8 @@ final class AsteroidsViewModel {
     /// The end reached flag.
     private var isEndReached: Bool = false
     
-    /// An instance of `GetAsteroidsUseCaseProtocol`.
-    private let getAsteroidsUseCase: GetAsteroidsUseCaseProtocol
+    /// An instance of `GetAsteroidsUseCase`.
+    private let getAsteroidsUseCase: GetAsteroidsUseCase
     
     /// The `Task` instance that performs the load process.
     private var loadTask: Task<Void, Never>?
@@ -35,9 +35,9 @@ final class AsteroidsViewModel {
     private (set) var size: Int = 20
     
     /// Creates a new instance of `AsteroidsViewModel`.
-    /// - parameter getAsteroidsUseCase: An instance of `GetAsteroidsUseCaseProtocol`.
+    /// - parameter getAsteroidsUseCase: An instance of `GetAsteroidsUseCase`.
     /// - returns: An instance of `AsteroidsViewModel`.
-    init(getAsteroidsUseCase: GetAsteroidsUseCaseProtocol) {
+    init(getAsteroidsUseCase: GetAsteroidsUseCase) {
         self.getAsteroidsUseCase = getAsteroidsUseCase
     }
     
@@ -87,7 +87,7 @@ final class AsteroidsViewModel {
         guard loadTask == nil, !isEndReached else {
             return
         }
-                
+        
         loadTask = Task(priority: .high) { [weak self] in
             guard let self = self else {
                 return

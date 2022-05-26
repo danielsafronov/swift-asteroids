@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Asteroid structure.
 struct Asteroid {
     let id: Int
     let name: String

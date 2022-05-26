@@ -18,17 +18,17 @@ final class AsteroidViewModel {
     /// The asteroid identifier.
     private let asteroidId: Int
     
-    /// An instance of `GetAsteroidUseCaseProtocol`.
-    private let getAsteroidUseCase: GetAsteroidUseCaseProtocol
+    /// An instance of `GetAsteroidUseCase`.
+    private let getAsteroidUseCase: GetAsteroidUseCase
     
     /// The `Task` instance that performs the load process.
     private var loadTask: Task<Void, Never>?
     
     /// Creates a new instance of `AsteroidViewModel`.
     /// - parameter asteroidId: The asteroid identifier.
-    /// - parameter getAsteroidUseCase: An instance of `GetAsteroidUseCaseProtocol`.
+    /// - parameter getAsteroidUseCase: An instance of `GetAsteroidUseCase`.
     /// - returns: An instance of `AsteroidViewModel`.
-    init(asteroidId: Int, getAsteroidUseCase: GetAsteroidUseCaseProtocol) {
+    init(asteroidId: Int, getAsteroidUseCase: GetAsteroidUseCase) {
         self.asteroidId = asteroidId
         self.getAsteroidUseCase = getAsteroidUseCase
     }

@@ -9,8 +9,8 @@ import Foundation
 import HttpClient
 
 /// AsteroidAPIDataSource structure.
-struct AsteroidAPIDataSource: AsteroidDataSourceProtocol {
-    /// An instance of HttpClientProtocol.
+struct AsteroidAPIDataSource: AsteroidDataSource {
+    /// An instance of `HttpClientProtocol`.
     let httpClient: HttpClientProtocol
     
     /// Returns a list of `Asteroid` instances for specified `page` and `size`.

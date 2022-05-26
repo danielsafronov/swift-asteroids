@@ -1,5 +1,5 @@
 //
-//  AsteroidDataSourceProtocol.swift
+//  AsteroidDataSource.swift
 //  Asteroids
 //
 //  Created by Daniel Safronov on 04.05.2022.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-/// AsteroidDataSourceProtocol protocol.
-protocol AsteroidDataSourceProtocol {
+/// AsteroidDataSource protocol.
+protocol AsteroidDataSource {
     /// Returns a list of `Asteroid` instances for specified `page` and `size`.
     /// - parameter size: The number of list page items.
     /// - parameter page: The list page.
