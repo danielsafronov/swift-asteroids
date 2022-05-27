@@ -10,6 +10,9 @@ import UIKit
 
 /// AsteroidsViewController class.
 final class AsteroidsViewController: UIViewController {
+    /// An instance of `AsteroidsViewControllerDelegate`.
+    weak var delegate: AsteroidsViewControllerDelegate?
+    
     /// The set of `AnyCancellable` instances.
     private lazy var cancellable = Set<AnyCancellable>()
     
@@ -162,13 +165,10 @@ extension AsteroidsViewController: AsteroidsContentViewDelegate {
     /// Tells the delegate that the row did selected.
     /// - parameter indexPath: The selected row index.
     func didSelectRow(at indexPath: IndexPath) {
-        guard let item = viewModel.item(at: indexPath),
-              let navigationController = navigationController
-        else {
+        guard let item = viewModel.item(at: indexPath) else {
             return
         }
         
-        let controller = AsteroidViewController(arguments: .init(asteroid: item))
-        navigationController.pushViewController(controller, animated: true)
+        delegate?.didSelectAsteroid(asteroidId: item.id)
     }
 }

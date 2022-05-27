@@ -19,7 +19,7 @@ final class AsteroidViewController: UIViewController {
     /// An instance of `AsteroidViewModel`.
     private lazy var viewModel = {
         AsteroidViewModel(
-            asteroidId: arguments.asteroid.id,
+            asteroidId: arguments.asteroidId,
             getAsteroidUseCase: ApplicationProvider.shared.serviceLocator.requireResolve()
         )
     }()
@@ -114,6 +114,6 @@ final class AsteroidViewController: UIViewController {
 extension AsteroidViewController {
     /// Arguments structure.
     struct Arguments {
-        let asteroid: Asteroid
+        let asteroidId: Int
     }
 }
