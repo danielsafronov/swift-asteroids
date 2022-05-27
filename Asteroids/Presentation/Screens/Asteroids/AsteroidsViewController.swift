@@ -140,7 +140,7 @@ final class AsteroidsViewController: UIViewController {
     }
 }
 
-extension AsteroidsViewController: AsteroidsContentViewDelegateProtocol {    
+extension AsteroidsViewController: AsteroidsContentViewDelegate {    
     /// Tells the delegate to return the number of rows.
     /// - returns: The number of rows.
     func numberOfRows() -> Int {

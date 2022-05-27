@@ -1,5 +1,5 @@
 //
-//  AsteroidsContentViewDelegateProtocol.swift
+//  AsteroidsContentViewDelegate.swift
 //  Asteroids
 //
 //  Created by Daniel Safronov on 04.05.2022.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-/// AsteroidsContentViewDelegateProtocol protocol.
-protocol AsteroidsContentViewDelegateProtocol: AnyObject {
+/// AsteroidsContentViewDelegate protocol.
+protocol AsteroidsContentViewDelegate: AnyObject {
     /// Tells the delegate to return the number of rows.
     /// - returns: The number of rows.
     func numberOfRows() -> Int

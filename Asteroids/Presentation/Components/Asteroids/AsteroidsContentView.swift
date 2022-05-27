@@ -22,7 +22,7 @@ final class AsteroidsContentView: UIView, UITableViewDelegate, UITableViewDataSo
     private lazy var contentGuide = UILayoutGuide()
     
     /// An instance of `AsteroidsContentViewDelegateProtocol`.
-    weak var delegate: AsteroidsContentViewDelegateProtocol?
+    weak var delegate: AsteroidsContentViewDelegate?
     
     /// Initializes and returns a newly allocated view object.
     /// - returns: An initialized view object.
